@@ -33,13 +33,11 @@ def insert_data():
         if sqliteConnection:
             sqliteConnection.close()
 while True:
-    #ændre buzzer variable til False
     data.temp = temp.tempsensor()
     data.afstand = ultra.ultramåling()
     print("temp: ", data.temp, "afstand: ", data.afstand)
     print(data.afstand)
     if(data.afstand <= data.afstandmin):
         buzzer.buzzer()
-        #ændre buzzer variable i data til True
     time.sleep(5)
     insert_data()
