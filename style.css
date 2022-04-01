@@ -1,0 +1,32 @@
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgb(133, 85, 22);
+ }
+table {
+font-family: arial, sans-serif;
+border-collapse: collapse;
+width: 100%;
+}
+
+td, th {
+border: 1px solid #dddddd;
+text-align: left;
+padding: 8px;
+}
+
+tr:nth-child(even) {
+background-color: #dddddd;
+}
+
+
+.form-container .btn:hover, .open-button:hover {
+opacity: 1;
+}
+
+.red {color:red}
+.orange {color:orange}
+.green {color:green}
+  

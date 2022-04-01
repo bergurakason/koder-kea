@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="{{ url_for('static',filename='style.css') }}">
+        <title>
+            Database information
+        </title>
+    </head>
+    <body>
+            </div>
+            </div>
+          </nav>
+          <h1>Data fra IoT løsning</h1>
+        <table class="sortable">
+            <tr>
+                <th>Temperatur</th>
+                <th>Afstand</th>
+            </tr>
+        {% for item in all_data%}
+        <tr class="item"> 
+            <td>{{item[1]}}</td>
+            <td>{{item[2]}}</td>
+        </tr>
+        {%endfor%}
+        </table>
+    </body>
+</html>
